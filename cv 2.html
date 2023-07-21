@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Diviser le corps en trois parties</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      background-color: whitesmoke;
+    }
+    
+    .section {
+      flex-grow: 1;
+    }
+    
+    #section1 {
+      background-color: darkslateblue;
+       font-size: 16px;
+      height: 14%;
+      font-family: calibri;  
+
+    }
+    
+    #section2 {
+      background-color: whitesmoke;
+      height: 86%;
+    }
+    
+    
+       [data-tab-info] {
+            display: none;
+        }
+          
+        .active[data-tab-info] {
+            display: block;
+        }
+          
+        .tab-content {
+            font-size: 18px;
+            color: black;  
+            font-family: calibri;  
+            
+        }
+          
+        .tabs {
+            font-size: 17px;
+            color: darkslateblue;
+            display: flex;
+            margin: 00px 20px 0px 400px;
+            font-family: calibri;  
+            text-decoration: bold;
+        }
+          
+        .tabs span {
+            
+            padding: 2px;
+            border: 1px solid rgb(255, 255, 255);
+        }
+          
+        .tabs span:hover {
+            background: lightblue;
+            cursor: pointer;
+            color: black;
+        }
+         .container {
+    display: inline-block;
+    position: relative;
+}
+.container .text {
+
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    font-family: TimesNewRoman;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 1%;
+    color: black;
+    width: 2%;
+}
+a[href^="mailto:"] {
+  text-decoration: none;
+}
+a[href^="telephone:"] {
+  text-decoration: none;
+}
+a[href^="https://www.linkedin.com/in/meriem-el-rhaffouli-59041b243/"] {
+  text-decoration: none;
+}
+ .justifier {
+            text-align: justify;
+        }
+          .slider {
+            position: relative;
+            width: 100%;
+            height: 300px; /* Modifier la hauteur selon vos besoins */
+            overflow: hidden;
+        }
+        
+        .slider img {
+            width: 100%;
+            height: auto;
+        }   
+         .vertical-bar {
+      width: 10px;
+      height: 200px;
+      background-color: greenyellow;
+    }
+     .horizontal-bar {
+      width: 70%;
+      height: 10px;
+      background-color: greenyellow;
+    }
+    .slide {
+            display: none;
+             color: orange;
+             margin:-50px 0px 0px 240px;
+             font-family: calibri;
+             font-size: 12px;
+             margin:-50px 0px 0px 280px;
+        }
+        .active-slide {
+            display: block; }
+  </style>
+</head>
+<body>
+  <div id="section1" class="section">
+    <pre><p style="color: greenyellow;  font-family: calibri; background-color: darkslateblue;  ">                                                                                                                     <b>EL RHAFFOULI MERIEM,  INGENIEUR TOPOGRAPHE </b></P2>
+      
+<P2 style="color: whitesmoke;">                                           Email : <a style="color: whitesmoke;" href = "mailto: meriemelrhaffouli99@gmail.com">meriemelrhaffouli99@gmail.com </a>                Tel.  <a style="color: whitesmoke;" href = "telephone: 0657559400">0657559400 </a>                Linkedin: <a style="color:whitesmoke;" href = "https://www.linkedin.com/in/meriem-el-rhaffouli-59041b243/">https://www.linkedin.com/in/meriem-el-rhaffouli-59041b243/ </a> </p> 
+      </pre> </div>
+      <div id="section2" class="section"> <pre><div class="tabs">
+        <span data-tab-value="#profil"><b>Profil         </b></span>
+        <span data-tab-value="#formation"><b> Formation       </b></span>
+        <span data-tab-value="#pfe"><b>  Projet de fin d'étude       </b></span>
+        <span data-tab-value="#experience"><b> Expériences professionelles</b></span>
+    </div><div class="tab-content"><div class="tabs__tab active" id="profil" data-tab-info style="font-family: Calibri;text-align: justify-all;">
+    
+
+     <img src="2.jpg" style="width: 200px; height: 200px; margin: 0px 20px 0px 100px; float: left;">
+ Ayant obtenu mon diplome d'ingénieur d'état en topographie de l'institut agronomique et vétérinaire 
+ Hassan II, et forte d'une expérience préalable dans le domaine, Je suis actuellement à la recherche d'une 
+ nouvelle opportunité d'emploi dans l'objectif de forger et perfectionner mes acquis théoriques et pratiques.
+ Je suis disponible, motivée, soucieuse de se perfectionner et désireuse de réussir mon insertion
+ professionnelle.
+ Je suis prête à intégrer une nouvelle équipe, renforcer mes connaissances acquises durant ma formation, 
+ aqcuérir de nouveux atouts professionnels et ainsi participer aux développements de vos futures activités.
+<div class="horizontal-bar" style="margin: 80px 0px 0px 200px;"></div>
+</div><div class="tabs__tab" id="formation" data-tab-info> <p> <img src="bourse-detudes.png" style="width: 70px; height: 70px;margin: 0px 0px 0px 260px;  float: left; ">
+   Diplome d'ingénieur en sciences géomatiques et ingénierie topographique
+             Institut Agronomique et Vétérinaire HASSAN II
+   <button style="margin: 0px 0px 0px 190px;" onclick="maFonction1()">Projets académiques</button>
+<div id="maDIV1" style="display:none; color: darkslateblue; font-size: 17px "> <img src="iav.PNG" style="width: ç0px; height: 70px;margin: 20px 0px 0px 260px;  float: left; ">
+   - L’élaboration d’un géo portail traitant les accidents routiers au Maroc en utilisant HTML, CSS et la bibliothèque Leaflet.
+   - L’explication du phénomène de l’inondation en utilisant le  modèle PROBIT et le traitement des images satellites.
+   - L’exploitation de l’information texturale pour l’amélioration de la Classification des images.
+   - L’exploitation de l’HISTOGRAM  MATCHING dans le processus De production de mosaïque d’ortho photos  
+                                                                                           sur ERDAS – IMAGINE  </div> <script>
+function maFonction1() {var div = document.getElementById("maDIV1");if (div.style.display === "none") {div.style.display = "block";} else {div.style.display = "none";}} </script>
+<button style="margin: 0px 0px 0px 530px;" onclick="maFonction2()">Stages Académiques</button>
+<div id="maDIV2" style="display:none; color: black; "><img src="logo-ancfcc.PNG" style="width: 120px; height: 70px;margin: 20px 0px 0px 50px;  float: left; ">
+<b>Stage de cadastre et de concervation foncière.</b>
+Block Foncier: Bernoussi, Zenata 
+Du 09 Mai 2022 Au 20 Mai 2022
+
+
+<img src="iav.PNG" style="width: 70px; height: 70px;margin: 0px 0px 0px 80px;  float: left; ">
+<b>     Stage de professionnalisation, IAV HASSANE II</b> 
+     Du 04 Avril 2022 Au 24 avril 2022 
+     <div class="vertical-bar" style="margin: -200px 0px 0px 40px;"></div>
+<img src="logo-toptopo.PNG" style="width: 70px; height: 70px;margin: -220px 390px 0px -20px;  float: right; ">
+<p style="float: right;margin: -260px 50px 0px -20px;">
+<b>             Stage en entrprise - Société TOP-TOPO</b> 
+             Du 03 Septembre 2021 Au 16 Octobre 2021 </p> 
+             <img src="logo-mpping.jpg" style="width: 80px; height: 70px;margin: -140px 30px 0px 750px;  float: left; ">
+<p style="margin : -160px 30px 0px 840px;"> <b>Stage d’initiation à la profession 
+Société MAPPING ENGINEERING, Casablanca </b>
+Du 02 Août 2021 Au 22 Août 2021 </p><div class="vertical-bar" style="margin: -190px 0px 0px 720px;"></div>                                                                              
+  <script>
+function maFonction2() {var div = document.getElementById("maDIV2");if (div.style.display === "none") {div.style.display = "block";} else {div.style.display = "none";}} </script></div>
+  </div> 
+<div class="tabs__tab" id="pfe" data-tab-info> <p> <img src="bourse-detudes.png" style="width: 70px; height: 70px;margin: 0px 0px 0px 30px;float: left;"><div class="horizontal-bar" style="margin:-60px 0px 0px 350px;width: 20%;height: 10px;" ></div><div class="vertical-bar" style="margin: -2px 0px 0px 590px;width: 10px;height: 100px;"></div>                                
+   <p style="margin: -60px 0px 0px 20px"><b>Stage PFE, Société GOEPRISM MAROC 
+   Service de postionnement GNSS-ANCFCC, études et pratique </b> 
+   Du 23 Mai 2022 Au 20 Septembre 2022</p></p>
+   <img src="DSC_4725.JPG" style="width: 350px; height: 200px;margin: -180px 0px 0px 700px;float: left;">
+   <button style="margin: 0px 0px 0px 280px;" onclick="maFonction3()">Détails du projet</button>
+<div id="maDIV3" style="color: darkslateblue;display:none; font-size: 17px; "> <img src="logo-geoprism.PNG" style="width: 90px; height: 80px;margin: 20px 0px 0px 260px;  float: left; "> 
+    1 -   Utilisation approfondie du service NRTK du réseau RGPM suivant les différents 
+           formats de corrections fournis; VRS, FKP, MAX et IMAX .
+    2 -   Réalisation de 500 mesures en mode Point Rapide et 20 mesures en mode Point Topo.
+    3 -   Utilisation de trois récepteurs GNSS pour étudier la compatibilité récepteur - 
+                                                                                                      Format de correction NRTK.
+<pre><p style="margin: -40px 0px 0px 0px;">
+<div class="container">
+      <img src="rec1.jpg" style="width: 200px; height: 200px;margin: 0px 0px 0px 230px; ">
+      <div class="text"> <pre><p style="width: 20px; margin: -20px 0px 0px 0px; color: white;"><b>        Récepteur GNSS 
+        KOLIDA K1 Pro </b></p></pre>
+      </div></div> <div class="container"> 
+      <img src="rec2.jpg" style="width: 200px; height: 200px;margin: 0px 0px 0px 90px;  ">
+      <div class="text"> <pre><p style="width: 20px; margin: -20px 0px 0px 0px; color: white;"> <b>Récepteur GNSS 
+ KOLIDA K20s </b>  </p></pre>
+      </div></div><div class="container">
+      <img src="rec3.jpg" style="width: 200px; height: 200px;margin: 0px 0px 0px 90px;  ">
+      <div class="text"> <pre><p style="width: 20px; margin: -20px 0px 0px 0px; color: white;"> <b>Récepteur GNSS 
+ TOPCON HIPER V </b> </p></pre>
+      </div></div></p> </pre>
+      <p style="margin: -90px 0px 0px 250px;">
+                           4 -   Etablissement des <b>ellipses d'erreurs</b> des formats de correction NRTK. </p> 
+<pre><p style="color: black; font-family: calibri;margin: 50px 0px -40px 350px;"> 
+                                                            La carte montre la répartition spatiale des mesures NRTK 
+                                                            suivant les deux modes Points Topo et Point Rapide 
+                                                            (pour le récepteur KOLIDA K20s et pour le format NRTK VRS), 
+                                                            ainsi que l'écart par rapport à la position de réference calculée 
+                                                            en mode statique (marquée en rouge).
+                                                            c'est à base de ces cartes que les analyses et les explications
+                                                            ont été basées.</p>
+           <img src="vrsk20.PNG" style="width: 300px; height: 300px;margin: -190px 0px 0px 240px; float: left; border:1px solid darkgreen;"> </pre>
+           <pre>
+                          <p style="margin: 10px 0px 0px 360px; font-family: calibri;">5 -   Suggestion de méthodologies et conseils pour mieux profiter de ce nouveau
+      service marocain. </p>
+
+                        <p style="margin:0px 0px 0px -90px;font-family: calibri;"><p style="color: black; font-family: calibri; margin:0px 0px 0px 310px ;">  <b>                         Le projet a été encadré par : </b>
+                            <div class="horizontal-bar" style="margin: 0px 0px 0px 350px;width: 58.7%;height: 10px;" ></div><div class="vertical-bar" style="margin: 0px 0px 0px 350px;width: 10px;height: 100px;"></div>     
+                            <div class="vertical-bar" style="margin: -140px 0px 0px 700px;width: 10px;height: 100px;"></div>     
+                            <div class="vertical-bar" style="margin: -140px 0px 0px 1050px;width: 10px;height: 100px;"></div>     
+                              <p style="margin:-40px 0px 0px 140px;font-family: calibri;"><b style="color: darkgreen;">
+                        Pr Mourad BOUZIANI </b>
+                        IGT, Professeur à l'IAV HASSAN II, 
+                        Département de géodésie
+                        Chef de filiére "Sciences géomatiques
+                        et ingénierie topographique"</p>
+                                -<p style="margin: -140px 0px 0px 600px; font-family: calibri;"> <b style="color: darkgreen;"> Mr Hicham BIAR </b>
+IT, Gérant de la société GEOPRISM, 
+spécialisée dans la revente du 
+matériel topographique</p>
+                                -<P style="margin: -130px 0px 0px 940px;font-family: calibri;"><b style="color: darkgreen;"> Mr Abdenbi ZAGAOUI </b>
+IGT, Chef de service réseau 
+GNSS Permanent
+Département de géodésie
+Direction de la cartographie
+ANCFCC </P></p>
+
+                                           <b style="color: black;"> Il a été éxaminé par : </b>
+                          <div class="horizontal-bar" style="margin: 0px 0px 0px 350px;width: 58.7%;height: 10px;" ></div><div class="vertical-bar" style="margin: 0px 0px 0px 350px;width: 10px;height: 100px;"></div>     
+                            <div class="vertical-bar" style="margin: -140px 0px 0px 700px;width: 10px;height: 100px;"></div>     
+                            <div class="vertical-bar" style="margin: -140px 0px 0px 1050px;width: 10px;height: 100px;"></div>     
+                           <b style="color: darkgreen;">Pr Reda YAAGOUBI </b>
+                           IGT, Professeur à l'IAV HASSAN II
+                           Département de géodésie
+<p style="margin:-60px 0px 0px 600px;font-family: calibri; " > <b style="color: darkgreen;">Mr Tarek LAGHZIL </b>
+ IGT, Direction de la cartographie
+ ANCFCC</p>
+ <P style="margin:-100px 0px 0px 930px;font-family: calibri;"><b style="color: darkgreen;"> Mr Hakim BOULAASSAL </b>
+ IGT professeur à la faculté 
+ des sciences et techniques 
+ Tanger</P></p> </pre></div><script>
+function maFonction3() {var div = document.getElementById("maDIV3");if (div.style.display === "none") {div.style.display = "block";} else {div.style.display = "none";}} </script></div>
+<div class="tabs__tab" id="experience" data-tab-info> <p style="color: black;margin: -20px 0px 0px 0px;">  <img src="logo-mpping.jpg" style="width: 120px; height: 90px;margin:20px 0px 0px 220px;  float: left; ">
+<b>   Société MAPPING ENGINEERING 
+   Ingénieure topographe, Chef de projets 
+   Rattachée au département Topographie </b> 
+   Du 16 Septembre 2022 Jusqu'au Aujourd'hui  </p>
+   <p style="color: black;margin: -20px 0px 0px 0px;">  
+<b style="color: darkblue; margin:0px 0px 0px 210px;">  Projets réalisés  </b> 
+    </p>
+    <div class="presentation"><div class="slide active-slide "><h1>IMMATRICULATION FONCIERE D'ENSEMBLE</h1><p style="color: black;font-size: 15px;">✓ Suivi et contrôle des travaux 
+✓ Traitement des données  
+✓ Assistance technique et cadrage des équipes </p></div><div class="slide"><h1> REALISATION DES PRESTATIONS D’ETUDES TOPOGRAPHIQUES 
+ DES LIGNES DE BUS A HAUT NIVEAU DE SERVICE (BHNS) DE MARRAKECH </h1> <p style="color: black;font-size: 15px; Margin:-20px 0px 0px 0px;">✓ Réalisation de la triangulation complémentaire et du polygonale de précision. 
+✓ Réalisation de la bande cotée (levés topographiques). 
+✓ Etablissement des plans et état parcellaires </p>
+        </div></div><button onclick="previousSlide()" style="margin:-50px 0px 0px 240px;">Précédent</button><button onclick="nextSlide()" style="margin:0px 0px 0px 60px;">Suivant</button>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.getElementsByClassName("slide");
+
+        function showSlide(n) {
+            slides[currentSlide].classList.remove("active-slide");
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].classList.add("active-slide");
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function previousSlide() {
+            showSlide(currentSlide - 1);
+        }
+    </script>
+</div>
+<script type="text/javascript">
+        const tabs = document.querySelectorAll('[data-tab-value]')
+        const tabInfos = document.querySelectorAll('[data-tab-info]')
+  
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const target = document
+                    .querySelector(tab.dataset.tabValue);
+  
+                tabInfos.forEach(tabInfo => {
+                    tabInfo.classList.remove('active')
+                })
+                target.classList.add('active');
+            })
+        })
+    </script></pre></div>
+</body>
+
+</html>
+
+
+
